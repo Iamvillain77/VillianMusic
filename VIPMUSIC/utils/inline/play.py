@@ -55,25 +55,25 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
 
     # Fun and engaging sentences with progress bar
     if 10 < umm <= 20:
-        bar = "💞ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ᴄʜᴀɴɴᴇʟs💞"
+        bar = "ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ᴄʜᴀɴɴᴇʟs"
     elif 20 <= umm < 35:
-        bar = "🎄ᴛᴀᴘ ᴛᴏ ᴇɴᴛᴇʀ ᴍᴏʀᴇ ɢʀᴏᴜᴘs🎄"
+        bar = "ᴛᴀᴘ ᴛᴏ ᴇɴᴛᴇʀ ᴍᴏʀᴇ ɢʀᴏᴜᴘs"
     elif 35 <= umm < 50:
-        bar = "🎁ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ɴᴇᴡ ᴄʜᴀᴛs🎁"
+        bar = "ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ɴᴇᴡ ᴄʜᴀᴛs"
     elif 50 <= umm < 75:
-        bar = "⚜️ᴛᴀᴘ ʜᴇʀᴇ ғᴏʀ ᴄʜᴀᴛ ɪɴᴠɪᴛᴇs⚜️"
+        bar = "ᴛᴀᴘ ʜᴇʀᴇ ғᴏʀ ᴄʜᴀᴛ ɪɴᴠɪᴛᴇ"
     elif 75 <= umm < 80:
-        bar = "🔥ᴄʟɪᴄᴋ ᴛᴏ ᴀᴄᴄᴇss ɢʀᴏᴜᴘs🔥"
+        bar = "ᴄʟɪᴄᴋ ᴛᴏ ᴀᴄᴄᴇss ɢʀᴏᴜᴘs"
     elif 80 <= umm < 85:
-        bar = "🌟ᴛᴀᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴄʜᴀᴛ🌟"
+        bar = "ᴛᴀᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴄʜᴀᴛ"
     elif 85 <= umm < 90:
-        bar = "🐥ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴄʜᴀᴛ ʀᴏᴏᴍ🐥"
+        bar = "ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴄʜᴀᴛ ʀᴏᴏᴍ"
     elif 90 <= umm < 95:
-        bar = "❣️ᴛᴀᴘ ᴛᴏ ᴀᴅᴅ ᴅɪғғᴇʀᴇɴᴛ ɢʀᴏᴜᴘ❣️"
+        bar = "ᴛᴀᴘ ᴛᴏ ᴀᴅᴅ ᴅɪғғᴇʀᴇɴᴛ ɢʀᴏᴜᴘ"
     elif 95 <= umm < 100:
-        bar = "⚡ᴄʟɪᴄᴋ ғᴏʀ ɢᴇᴛ ᴀᴅᴅ ɪɴ ᴄʜᴀᴛs⚡"
+        bar = "ᴄʟɪᴄᴋ ғᴏʀ ɢᴇᴛ ᴀᴅᴅ ɪɴ ᴄʜᴀᴛs"
     else:
-        bar = "✨ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ɢʀᴏᴜᴘ ɪɴᴠɪᴛᴇs✨"
+        bar = "ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ɢʀᴏᴜᴘ ɪɴᴠɪᴛᴇs"
     buttons = [
         [
             InlineKeyboardButton(
@@ -81,15 +81,7 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
-        [
-            InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"vip_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
-                callback_data=f"Pages Back|3|{videoid}|{chat_id}",
-            ),
-        ],
+       
         [
             InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"{config.SUPPORT_GROUP}"),
@@ -157,13 +149,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"vip_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
-                callback_data=f"Pages Back|3|{videoid}|{chat_id}",
-            ),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"{config.SUPPORT_GROUP}"),
         ],
         [
             InlineKeyboardButton(
@@ -635,13 +622,8 @@ def stream_markup_timer2(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"vip_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
-                callback_data=f"Pages Back|3|{videoid}|{chat_id}",
-            ),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"{config.SUPPORT_GROUP}"),
         ],
         [
             InlineKeyboardButton(
