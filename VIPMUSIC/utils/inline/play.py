@@ -87,7 +87,7 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="Support",
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{config.@oldskoolgc}",
             ),
         ],
         [
@@ -159,7 +159,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="Support",
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{config.@oldskoolgc}",
             ),
         ],
         [
@@ -193,7 +193,7 @@ def telegram_markupp(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="Support",
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{config.@oldskoolgc}",
             ),
         ],
         [
@@ -443,7 +443,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="Support",
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{config.@oldskoolgc}",
             ),
         ],
         [
@@ -657,7 +657,7 @@ def stream_markup_timer2(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="Support",
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{config.@oldskoolgc}",
             ),
         ],
         [
