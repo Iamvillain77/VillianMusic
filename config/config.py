@@ -77,7 +77,10 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "1808943146").split())
 )  # Input type must be interger
 
+AUTO_GCAST = os.getenv("AUTO_GCAST", "on")
 
+# Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
